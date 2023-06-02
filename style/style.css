@@ -1,0 +1,59 @@
+@import url(reset.css);
+@import url(results.css);
+@import url(summary.css);
+@import url(button.css);
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+ --font-family: 'Hanken Grotesk', sans-serif;
+ /* primary colors */
+ --light-red: hsl(0, 100%, 67%);
+ --light-red-background: hsla(0, 100%, 67%, 0.1);
+ --orangey-yellow: hsl(39, 100%, 56%);
+ --orangey-yellow-background: hsl(39, 100%, 56%, 0.1);
+ --green-teal: hsl(166, 100%, 37%);
+ --green-teal-background: hsla(166,100%,37%, 0.1);
+ --cobalt-blue: hsl(234, 85%, 45%);
+ --cobalt-blue-background: hsla(234, 85%, 45%, 0.1);
+ /* gradient background */
+ --background-gradient: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+ /* gradient circle */
+ --display-gradient: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+ /* neutral colors */
+ --white: hsl(0, 0%, 100%);
+ --pale-blue: hsl(221, 100%, 96%);
+ --light-lavander: hsl(241, 100%, 89%);
+ --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+html{
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+
+main {
+    margin: auto auto;
+    width: 375px;
+}
+
+@media screen and (min-width: 750px) {
+    body{
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        max-width: 750px;
+        min-width: 720px;
+        border-radius: 34px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(auto, 500px);
+        box-shadow: 16px 16px 20px 12px var(--pale-blue);
+        }
+}

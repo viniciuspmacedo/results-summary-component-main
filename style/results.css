@@ -1,0 +1,55 @@
+.results {
+    background: var(--background-gradient);
+    border-radius: 0 0 34px 34px;
+    padding: 30px 60px 42px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--light-lavander);
+}
+
+.results h2 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.results .result__display {
+    width: 140px;
+    height: 140px;
+    background: var(--display-gradient);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.results .result__display .results__display-points {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.results h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.results p {
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 750px) {
+    .results {
+        border-radius: 34px;
+        min-width: 370px;
+    }
+}

@@ -1,0 +1,15 @@
+.continue {
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    height: 56px;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 32px;
+    border: none;
+}
+
+.continue:hover{
+    background: var(--background-gradient);
+    cursor: pointer;
+}

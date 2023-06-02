@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style/style.css">
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <main>
+    <section class="results">
+      <h2>Your Result</h2>
+      <div class="result__display">
+      <span class="results__display-points">76</span>
+        of 100
+      </div>
+      <div class="result__message">
+        <h3>Great</h3>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </section>
+    <section class="summary">
+      <h2>Summary</h2>
+      <ul class="summary__list">
+        <li class="summary__item reaction">
+          <span class="summary__icon reaction"></span>
+          <span class="summary__item-title">Reaction</span>
+          <span class="summary__item-points">80 <span class="summary__item-high-score"> / 100</span></span>
+        </li>
+        <li class="summary__item memory">
+          <span class="summary__icon memory"></span>
+          <span class="summary__item-title">Memory</span>
+          <span class="summary__item-points">92<span class="summary__item-high-score"> / 100</span></span>
+        </li>
 
-  Your Result
-  76
-  of 100
+        <li class="summary__item verbal">
+          <span class="summary__icon verbal"></span>
+          <span class="summary__item-title">Verbal</span>
+          <span class="summary__item-points">61<span class="summary__item-high-score"> / 100</span></span>
+        </li>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Vinicius Macedo</a>.
-  </div>
+        <li class="summary__item visual">
+          <span class="summary__icon visual"></span>
+          <span class="summary__item-title">Visual</span>
+          <span class="summary__item-points">72<span class="summary__item-high-score"> / 100</span></span>
+        </li>
+      </ul>
+      <button class="continue">Continue</button>
+    </section>
+      
+  </main>
 </body>
+
 </html>
