@@ -49,12 +49,12 @@
     margin-right: 10px;
 }
 
-.summary__item-title, .summary__item-points{
+.summary__item-title, .summary__item-score{
     display: flex;
     align-items: center;
 }
 
-.summary__item-points {
+.summary__item-score {
     color: var(--dark-gray-blue);
 }
 

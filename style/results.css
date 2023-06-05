@@ -29,7 +29,7 @@
     font-size: 0.9rem;
 }
 
-.results .result__display .results__display-points {
+.results .result__display .results__display-score {
     color: var(--white);
     font-size: 3rem;
     font-weight: 800;
